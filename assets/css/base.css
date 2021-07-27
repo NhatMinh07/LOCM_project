@@ -1,7 +1,13 @@
 :root {
     --white-color : #fff;
     --black-color : #000;
-    --text-color : rgb(224, 191, 4);
+    --text-color : rgb(255, 94, 0);
+}
+
+.grid {
+  width: 80%;
+  max-width: 100%;
+  margin:  0 auto;
 }
 @keyframes bigger {
     to {
