@@ -1,0 +1,119 @@
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: url("/assets/img/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0 0;
+}
+
+.grid {
+    width: 80%;
+    max-width: 100%;
+    margin:  0 auto;
+}
+
+.header {
+    height: 120px;
+    background-image: linear-gradient(147deg, #1D4350, #A43931);
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar__list {
+    
+}
+.navbar__list-item {
+    text-decoration: none;
+    font-size: 3.5rem;
+    margin: 16px;
+    color: rgb(255, 153, 0);
+    font-weight: bolder;
+}
+.navbar img {
+    width: 100px;
+    height: 100px;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+}
+.main {
+    width: 80%;
+    margin: 0 auto;
+}
+.main__item-title {
+    text-align: center;
+    font-size: 2.0rem;
+    font-weight: bold;
+    background: #FF0000;
+    background: -webkit-linear-gradient(to right, #FF0000 0%, #FFFF00 25%, #05C1FF 50%, #FFFF00 75%, #FF0000 100%);
+    background: -moz-linear-gradient(to right, #FF0000 0%, #FFFF00 25%, #05C1FF 50%, #FFFF00 75%, #FF0000 100%);
+    background: linear-gradient(to right, #FF0000 0%, #FFFF00 25%, #05C1FF 50%, #FFFF00 75%, #FF0000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: transform .2s;
+    max-width: 1600px;
+    cursor: default;
+    animation: spin 2.0s infinite linear;
+}
+.main__item-title:hover, .main__item-col:hover {
+    transform: scale(1.2);
+}
+.main__item-body {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    cursor: default;
+    text-align: center;
+}
+.main__item-col {
+    width: 500px;
+    transition: transform .2s;
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+.main__item-sever {
+    cursor: default;
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+    background: #FF0000;
+    background: -webkit-linear-gradient(to right, #FF0000 0%, #FFFF00 25%, #05C1FF 50%, #FFFF00 75%, #FF0000 100%);
+    background: -moz-linear-gradient(to right, #FF0000 0%, #FFFF00 25%, #05C1FF 50%, #FFFF00 75%, #FF0000 100%);
+    background: linear-gradient(to right, #FF0000 0%, #FFFF00 25%, #05C1FF 50%, #FFFF00 75%, #FF0000 100%);
+    padding: 10px;
+    animation: spin 2.0s infinite linear;
+}
+.backgroudForBorder{
+    background-image: url(/assets/img/bg-wool-dark.png);
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 50px;
+}
+.main__item-sever-col {
+    text-align: center;
+    color: var(--white-color);
+    font-size: 3.0rem;
+    font-weight: bolder;
+}
+    
