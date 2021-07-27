@@ -4,7 +4,7 @@
 
 html {
     font-size: 62.5%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -32,7 +32,6 @@ body {
     align-items: center;
 }
 .navbar__list {
-    
 }
 .navbar__list-item {
     text-decoration: none;
@@ -40,6 +39,9 @@ body {
     margin: 16px;
     color: rgb(255, 153, 0);
     font-weight: bolder;
+}
+.navbar__list-item:hover {
+    color: rgb(255, 81, 0);
 }
 .navbar img {
     width: 100px;
@@ -55,7 +57,7 @@ body {
 }
 .main__item-title {
     text-align: center;
-    font-size: 2.0rem;
+    font-size: 3rem;
     font-weight: bold;
     background: #FF0000;
     background: -webkit-linear-gradient(to right, #FF0000 0%, #FFFF00 25%, #05C1FF 50%, #FFFF00 75%, #FF0000 100%);
@@ -91,7 +93,7 @@ body {
     box-sizing: border-box;
     max-width: 100%;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 120px;
     border-radius: 50px;
     overflow: hidden;
     background: #FF0000;
