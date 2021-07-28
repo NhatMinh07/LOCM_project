@@ -19,11 +19,9 @@ body {
 }
 
 .header {
-    height: 120px;
-    /* background-image: linear-gradient(147deg, #1D4350, #A43931); */
+    height: 105px;
     width: 100%;
 }
-
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -31,10 +29,11 @@ body {
 }
 .navbar__list {
 }
+
 .navbar__list-item {
     text-decoration: none;
-    font-size: 3.5rem;
-    margin: 16px;
+    font-size: 2.4rem;
+    margin: 12px;
     color: rgb(255, 153, 0);
     font-weight: bolder;
 }
@@ -45,6 +44,7 @@ body {
     width: 100px;
     height: 100px;
 }
+/* Info */
 .info {
     display: flex;
     flex-direction: column;
@@ -58,22 +58,25 @@ body {
 .main__item-img {
     width: 100%;
     position: relative;
+    text-align: center;
 }
 .main__item-img img {
     height: 650px;
     width: 100%;
 }
+.main__item-align {
+    display: flex;
+    justify-content: center;
+}
 .main__item-title {
-    text-align: center;
-    font-size: 4.5rem;
+    font-size: 3.2rem;
     font-weight: bold;
     color: var(--white-color);
     transition: transform .2s;
-    max-width: 1600px;
+    max-width: 100%;
     cursor: default;
     position: absolute;
-    bottom: 50px;
-    left: 320px;
+    bottom: 6%;
 }
 .main__item-title:hover, .main__item-col:hover {
     transform: scale(1.2);
@@ -92,10 +95,10 @@ body {
 .main__item-col {
     width: 100%;
     transition: transform .2s;
-    font-size: 2.6rem;
+    font-size: 2.0rem;
     font-weight: bold;
     color: rgb(255, 153, 0);
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 .main__item-sever {
@@ -111,9 +114,6 @@ body {
     /* transition: transform .2s; */
     background-color: var(--white-color);
 }
-/* .main__item-sever:hover {
-    transform: scale(1.2);
-} */
 .main__item-sever-col-title {
     color: var(--black-color);
     font-weight: bolder;
@@ -191,6 +191,22 @@ ul{
 	background-color: #ffffff;
 }
 
+
+/* nav_mobile */
+.navbar__mobile-list {
+    display: none;
+}
+.nav__btn {
+    font-size: 5rem;
+    color: #fff;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    display: none;
+}
+#nav__mobile {
+    display: none;
+}
 /*responsive*/
 @media(max-width: 767px){
   .footer-col{
@@ -204,6 +220,111 @@ ul{
 }
 }
 
+/* Tablet */
+@media only screen and (min-width: 46.25em) and (max-width: 64.9375em){
+    .navbar__list img {
+        width: 50px;
+        height: 50px;
+    }
+    .navbar__list-item{
+        font-size: 1.8rem;
+        margin: 8px;
+    }
+    .header {
+        height: 60px;
+        width: 100%;
+    }
+    .main__item-align {
+        display: flex;
+        justify-content: center;
+    }
+    .main__item-title {
+        font-size: 1.9rem;
+        max-width: 80%;
+        bottom: 20px;
+    }
+    .main__item-img img {
+        height: auto;
+    }
+    /* Info */
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+    .main__item-sever {
+        margin-top: 100px;
+        margin-left: 0;
+        width: 100%;
+    }
+}
 
+/* Mobile */
+@media only screen and (max-width: 46.1875em){
+    .header {
+        height: 60px;
+    }
+    .navbar__list {
+        display: none;
+    }
+    .nav__btn {
+        display: block;
+        font-size: 3.5rem;
+    }
+    .navbar__mobile-list {
+        display: flex;
+        position: absolute;
+        z-index: 1;
+        top: 60px;
+        left: 0;
+        height: 200px;
+        width: 100%;
+        background-color: var(--white-color);
+        flex-direction: column;
+        padding: 12px;
+        transform: translateX(-100%);
+        transition: transform linear 0.1s;
+    }
+    .navbar__mobile-list-link {
+        text-decoration: none;
+        font-size: 2.0rem;
+        font-weight: bolder;
+        color: var(--black-color);
+    }
+    .nav__input:checked ~ .navbar__mobile-list{
+        transform: translateX(0%);
+    }
+    .main__item-col {
+        font-size: 2rem;
+        margin-top: 40px;
+    }
+    .main__item-title {
+        font-size: 1.8rem;
+        text-align: center;
+        max-width: 80%;
+        bottom: -70px;
+    }
+    .main__item-img img {
+        height: 200px;
+    }
+    /* Info */
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+    .main__item-col {
+        font-size: 1.5rem;
+    }
+    .main__item-sever {
+        margin-top: 50px;
+        margin-left: 0;
+        width: 100%;
+    }
+    .main__item-sever-col {
+        font-size: 1.8rem;
+    }
+    .footer {
+        margin-top: 50px;
+    }
+}
 
 
